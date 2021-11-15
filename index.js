@@ -31,6 +31,6 @@ app.use((req, res) => {
   res.send(404);
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
