@@ -1,6 +1,6 @@
-const fs = require("fs");
+//const fs = require("fs");
 const mongoose = require("mongoose");
-const { readFile, writeJSONToFile } = require("./fs-utils");
+//const { readFile, writeJSONToFile } = require("./fs-utils");
 
 const usersSchema = new mongoose.Schema({
   name: String,

@@ -10,12 +10,12 @@ const app = express();
 
 main().catch((err) => console.log(err));
 
+const uri = process.env.MONGODB_URI;
+const localUri = "mongodb://localhost:27017/users"
+
 async function main() {
-  await mongoose.connect("mongodb://localhost:27017/users");
+  await mongoose.connect(uri);
 }
-
-
-
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
