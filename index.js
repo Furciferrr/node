@@ -14,7 +14,7 @@ const uri = process.env.MONGODB_URI;
 const localUri = "mongodb://localhost:27017/users"
 
 async function main() {
-  await mongoose.connect(uri);
+  await mongoose.connect('mongodb+srv://vadim:<%HXc-bM8Hn3Y5H*>@cluster0.z2cpp.mongodb.net/Cluster0?retryWrites=true&w=majority');
 }
 
 app.use(bodyParser.urlencoded({ extended: false }));
